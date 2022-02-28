@@ -1,8 +1,35 @@
 body {
+  background-color: aqua;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
 }
 
 a {
   color: #00B7FF;
 }
+
+/* tbody> td {
+  margin: 15px;
+} */
+
+/* ul {
+  text-align: center;
+  list-style: inside;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+} */
+
+/* li { 
+  padding: 5px;
+ } */
+
+/* a { */
+  /* display: block; */
+  /* padding: 5px; */
+  /* background-color: aliceblue; */
+/* } */
