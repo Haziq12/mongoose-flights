@@ -12,24 +12,27 @@ a {
   color: #00B7FF;
 }
 
-/* tbody> td {
-  margin: 15px;
-} */
+table, th, td {
+  border: 1px black solid;
+}
 
-/* ul {
-  text-align: center;
+body {
+  background-color: aliceblue;
+}
+
+/* ul { */
+  /* text-align: center;
   list-style: inside;
   list-style-type: none;
+  display: inline;
   margin: 0;
-  padding: 0;
-} */
+  padding: 0; */
+/* } */
 
 /* li { 
   padding: 5px;
  } */
 
-/* a { */
-  /* display: block; */
-  /* padding: 5px; */
-  /* background-color: aliceblue; */
-/* } */
+/* a { 
+  padding: 3px;
+  } */
