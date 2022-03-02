@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/meals/new.css">
+  <title>Add Meal</title>
+  <%- include('../partials/nav') %>
+</head>
+<body>
+  <main>
+    <h1><%= title %> Below:</h1>
+    <form id="add-meal-form" action="/meals" method="post">
+      <label for="name-input">Meal name:</label>
+      <input type="text" name="name" id="name-input">
+      <button type="submit">Add Meal</button>
+    </form>
+    <p>Please ensure the meal is not already in the menu:
+      <% meals.forEach(meal => { %>
+       <option><%= meal.name %> </option>
+      <% }) %> 
+  </p>
+  </main>
+</body>
+</html>

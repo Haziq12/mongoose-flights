@@ -14,6 +14,8 @@ router.post('/:id/tickets', flightsCtrl.createTicket)
 
 router.delete('/:id', flightsCtrl.delete)
 
+router.post("/:id/meals", flightsCtrl.addToMeal)
+
 export {
   router
 }
