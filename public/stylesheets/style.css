@@ -1,38 +1,8 @@
-body {
-  background-color: aqua;
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-h1 {
-  text-align: center;
-}
-
-a {
-  color: #00B7FF;
-}
-
 table, th, td {
   border: 1px black solid;
 }
 
 body {
-  background-color: aliceblue;
-}
-
-/* ul { */
-  /* text-align: center;
-  list-style: inside;
-  list-style-type: none;
-  display: inline;
-  margin: 0;
-  padding: 0; */
-/* } */
-
-/* li { 
-  padding: 5px;
- } */
-
-/* a { 
-  padding: 3px;
-  } */
+  background-image: url("https://i.imgur.com/QsCfdW9.jpg");
+  background-color: #cccccc;
+ }

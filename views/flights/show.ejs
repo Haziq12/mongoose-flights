@@ -5,12 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=, initial-scale=1.0">
   <link rel='stylesheet' href='/stylesheets/flights/show.css'/>
+  <link rel="stylesheet" href="/stylesheets/style.css">
   <title>Flight Details</title>
   <%- include('../partials/nav') %>
 </head>
 <body>
   <main>
-    <h1>FLight Details</h1>
+    <h1>Flight Details</h1>
     <table>
       <thead>
         <tr>
@@ -36,12 +37,6 @@
       <input name="price" id="price" type="text">
       <button type="submit">Add ticket</button>
     </form>
-      <h3>Meals:</h3>
-    <ul>
-      <% flight.meals.forEach(flightMeal => { %>
-        <li><%= flightMeal.name %></li>
-      <% }) %>
-    </ul>
     <form 
     id="add-meal-to-flight" 
     action="/flights/<%= flight._id %>/meals" 
@@ -54,6 +49,12 @@
     </select>
     <button type="submit">Add meal to flight</button>
   </form>
+      <h3>Meals:</h3>
+    <ul>
+      <% flight.meals.forEach(flightMeal => { %>
+        <li><%= flightMeal.name %></li>
+      <% }) %>
+    </ul>
     <% if(flight.tickets.length) { %>
       <table>
         <thead>

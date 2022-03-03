@@ -20,14 +20,13 @@ function newFlight(req, res){
 }
 
 function create(req, res){
+  if(req.body.departs === '') delete req.body.departs
   const flight = new Flight(req.body)
-  for (value in req.body.date){
+  console.log('flight:', flight)
+  // for(let key in req.body){
     
-  }
-  for(let key in req.body){
-    if(req.body[key]==='') delete req.body[key]
-  }
-  console.log('after', req.body)
+  // }
+  // console.log('after', req.body)
   flight.save(function(err){
     if(err) return res.redirect('/flights/new')
     res.redirect('/flights/')
